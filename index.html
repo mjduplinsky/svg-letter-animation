@@ -93,8 +93,8 @@
 						</g>
 					</g>
 				</svg>
+					<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Play</button></div>
 			</div>
-			<div class="white-line"></div>
 			</div>
 		</main>
 		<script src="js/anime.min.js"></script>
@@ -151,6 +151,8 @@
 
 				// Trigger the animation
 				phrase.animate();
+
+				svg.nextElementSibling.querySelector('button').addEventListener('click', function() { phrase.animate(); });
 
 			})();
 		</script>
