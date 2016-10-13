@@ -1,0 +1,31 @@
+.letters {
+    position: relative;
+    display: block;
+    min-height: 400px;
+    max-height: 70vh;
+    margin: 0 auto;
+}
+
+.letter__layer {
+    fill: none;
+    stroke-miterlimit: 3;
+    stroke-linecap: butt;
+    stroke-linejoin: bevel;
+}
+
+.letters--effect .letter__layer:first-child {
+    /*-webkit-transform: translate3d(-2px, -2px, 0);
+    transform: translate3d(-2px, -2px, 0);*/
+    stroke: #607d8b;
+    stroke-width: 20px;
+}
+
+.letters--effect .letter__layer:nth-child(2) {
+    stroke: #eca80e;
+    stroke-width: 12px;
+}
+
+.letters--effect .letter__layer:nth-child(3) {
+    stroke: #ffffff;
+    stroke-width: 16px;
+}
